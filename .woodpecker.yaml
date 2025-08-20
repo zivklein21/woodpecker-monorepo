@@ -1,7 +1,7 @@
-pipeline:
-  local-step:
-    image: woodpecker-cli-ubi9:1
-    commands:
-      - echo "Running with local image!"
-      - woodpecker-cli --version
-      - woodpecker-cli exec --workflow-name woodpecker/service-a.yaml
+steps::
+- name: test
+  image: woodpecker-cli-ubi9:1
+  commands:
+    - echo "Running with local image!"
+    - woodpecker-cli --version
+    - woodpecker-cli exec --workflow-name woodpecker/service-a.yaml
