@@ -1,4 +1,4 @@
-steps::
+steps:
 - name: test
   image: woodpecker-cli-ubi9:1
   commands:
