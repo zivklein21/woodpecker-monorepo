@@ -4,4 +4,4 @@ pipeline:
     commands:
       - echo "Running with local image!"
       - woodpecker-cli --version
-      - woodpecker-cli exec --pipeline woodpecker/service-a.yaml
+      - woodpecker-cli exec --workflow-name woodpecker/service-a.yaml
