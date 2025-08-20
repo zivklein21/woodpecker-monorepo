@@ -4,4 +4,4 @@ pipeline:
     commands:
       - echo "Running with local image!"
       - woodpecker-cli --version
-      - woodpecker-cli pipeline ls --repo zivklein21/woodpecker-monorepo
+      - woodpecker-cli exec --pipeline woodpecker/service-a.yaml
