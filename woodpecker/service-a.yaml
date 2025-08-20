@@ -1,0 +1,5 @@
+steps:
+- name: test
+  image: alpine:latest
+  commands:
+    - echo "This is a test step in service A"

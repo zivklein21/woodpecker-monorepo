@@ -1,0 +1,7 @@
+pipeline:
+  local-step:
+    image: woodpecker-cli-ubi9:1
+    commands:
+      - echo "Running with local image!"
+      - woodpecker-cli --version
+      - woodpecker-cli run --pipeline woodpecker/service-a.yaml --service service-a
